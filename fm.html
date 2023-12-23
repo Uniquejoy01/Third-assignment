@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sign up</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="form.css">
+  </head>
+  <body>
+    <header aria-label="header">
+      <h1>Altschoolafrica Application Form</h1>
+      <nav>
+        <ul>
+          <li><a href="./index.html">Joy's Biography Page</a></li>
+          <li><a href="./sign.html">Altschool Sign Up Page</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+      
+        <h3>Fill in your details</h3>
+      </section>
+      <br />
+      <form action="/sign.html" method="post">
+        <label for="first-name"
+          >First Name<span class="required">:</span></label
+        >
+        <input
+          type="text"
+          name="first-name"
+          id="first-name"
+          placeholder="Enter first name"
+          required
+        />
+        <br />
+        <br />
+        <label for="last-name">Last Name<span class="required">:</span></label>
+        <input
+          type="text"
+          name="last-name"
+          id="last-name"
+          placeholder="Enter last name"
+          required
+        />
+        <br />
+        <br />
+        <label for="gender-option">Gender<span class="required">:</span></label>
+        <input
+          list="gender-option"
+          name="gender"
+          type="text"
+          id="gender"
+          placeholder="Select gender"
+          required
+        />
+        <datalist id="gender-option">
+          <option value="Male"></option>
+          <option value="Female"></option>
+        </datalist>
+        <br />
+        <br />
+        <label for="date">Date of Birth<span class="required">:</span></label>
+        <input type="date" name="date" id="date" required />
+        <br /><br />
+        <label for="email-address"
+          >Email Address<span class="required">:</span></label
+        >
+        <input
+          type="text"
+          name="email-Address"
+          id="email-Address"
+          placeholder="Enter email address"
+          required
+        />
+        <br /><br />
+        <label for="education-level"
+          >Education Level<span class="required">:</span></label
+        >
+        <input
+          type="text"
+          list="education-option"
+          name="education"
+          id="education-level"
+          placeholder="Select level of education"
+          required
+        />
+        <datalist id="education-option">
+          <option value="Bsc"></option>
+          <option value="Msc"></option>
+          <option value="Diploma"></option>
+          <option value="Doctorate(Phd)"></option>
+          <option value="High School/Secondary School"></option>
+          <option value="Under Graduate"></option>
+          <option value="Junior/Middle Schoool"></option>
+          <option value="Post Graduate"></option>
+        </datalist>
+        <br />
+        <br />
+        <label for="country-option">Country<span class="required">:</span></label>
+        <input
+          type="text"
+          list="country-option"
+          name="country"
+          id="country"
+          placeholder="Select your country"
+          required
+        />
+        <datalist class="select-list" id="country-option">
+          <option value="Algeria (+213)">Algeria (+213)</option>
+          <option value="Andorra (+376)">Andorra (+376)</option>
+          <option value="Angola (+244)">Angola (+244)</option>
+          <option value="Anguilla (+1264)">Anguilla (+1264)</option>
+          <option value="Antigua &amp; Barbuda (+1268)">
+            Antigua &amp; Barbuda (+1268)
+          </option>
+          <option value="Argentina (+54)">Argentina (+54)</option>
+          <option value="Armenia (+374)">Armenia (+374)</option></datalist>
+          <br />
+          <BR />
+          <label for="state">State/City of Residence</label> <input type="text" placeholder="Enter your city of residence"></label>
+          <br />
+          <br />
+          <label for="employment">Employment Status:</label><span class="required"></span></label>
+          <input
+          type="text"
+          list="employment-option"
+          name="employment"
+          id="employment-status"
+          placeholder="Select employment status"
+          required
+        />
+        <datalist id="employment-option">
+          <option value="Employed"></option>
+          <option value="Self Employed"></option>
+          <option value="Student"></option>
+          <option value="Unemployed"></option>
+        </datalist>
+        <br /><br />
+        <label for="number">Number:</label> <input type="number" placeholder="07088991122">
+        <br /><br />
+        <label for="school">Choose School:</label><span class="required"></span></label>
+          <input
+          type="text"
+          list="school-option"
+          name="school"
+          id="school-status"
+          placeholder="Cloud Engineering"
+          required
+        />
+        <datalist id="school-option">
+          <option value="Select course"></option>
+          <option value="Frontend Engineering"></option>
+          <option value="Backend Engineering"></option>
+          <option value="Cloud Engineering"></option>
+        </datalist>
+        <br />
+        <br />
+        <label for="how">How did you hear about us?:</label><span class="required"></span></label>
+          <input
+          type="text"
+          list="how-option"
+          name="how"
+          id="how-status"
+          required
+        />
+        <datalist id="how-option">
+          <option value="Select a channel"></option>
+          <option value="Instagram"></option>
+          <option value="Linkedin"></option>
+          <option value="Others"></option>
+        </datalist>
+        <br />
+        <br />
+        <label for="code">Schollarship/Discount Code (optional):</label><input type="text" place holder="Scholarship or student code">
+        <p>By clicking continue, I agree to <a href="#terms">Terms of Use</a> and acknowledge that I have read the <a href="#Policy">Privacy Policy.</a></p>
+        <br />
+        <br />
+        <input type="submit" value="submit">
+    </form>
+        </body>
+        </html>
